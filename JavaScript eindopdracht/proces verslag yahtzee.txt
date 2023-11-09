@@ -1,0 +1,20 @@
+proces verslag yahtzee
+	dag - 30 maart:
+		ik heb vandaag de roll button werkend gemaakt en de dice laten rollen.
+		ik had meer kunnen doen, maar ik heb geen foutjes gemaakt.
+
+	dag - 3 april:
+		ik heb vandaag de functies gemaakt voor de singles en combinaties.
+		ik heb redelijk wat tijd besteed aan coderen.
+
+	dag - 4 april:
+		ik heb vandaag alle variabeles gemaakt om de functies te koppelen aan een score.
+		ik heb bijna de hele dag eraan gewerkt.
+
+	dag - 5 april:
+		vandaag heb ik gewerkt om de scores correct te maken en ze correct te laten zien.
+		ik heb niet veel gedaan vandaag dus ik had wat harder en geconcentreerder kunnen werken.
+
+	dag - 6 april:
+		vandaag alleen de reload gemaakt voor aan het einde.
+		alles ging goed en ik heb snel gewerkt.
