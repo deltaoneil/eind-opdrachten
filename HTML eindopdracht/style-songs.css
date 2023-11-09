@@ -1,0 +1,374 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+    	min-height: 100vh;
+    	width: 100%;
+    	background: black;
+    	background-position: center;
+    	background-size: cover;
+    	position: relative;
+} 
+
+.footer{
+	width: 100%;
+	background: black;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+	height: 20%;
+}
+
+.footer p{
+	color: white;
+	line-height: 35px;
+}
+
+nav{
+    	display: flex;
+    	padding: 1% 6%;
+    	justify-content: space-between;
+    	align-items: center;
+}  
+
+nav img{
+    	width: 150px;
+	margin-top: 40px;
+}  
+
+.nav-links{
+    	flex: 1;
+    	text-align: right;
+}
+
+.nav-links ul li{
+    	list-style: none;
+    	display: inline-block;
+    	padding-top: 70px;
+	padding-bottom: 20px;
+	padding-left: 24px;
+	padding-right: 24px;
+    	position: relative;
+}
+
+.nav-links ul li a{
+    	color: #fff;
+    	text-decoration: none;
+    	font-size: 17px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.nav-links ul li::after{
+    	content: '';
+    	width: 0%;
+    	height: 2px;
+    	background: #fff;
+    	display: block;
+    	margin: auto;
+    	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    	width: 100%;
+}
+
+.songs-header{
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/songs-banner.png);
+	position: absolute;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	margin-top: 2%;
+}
+
+.songs-name{
+	margin-left: 30%;
+	margin-top: 180px;
+	width: 40%;
+}
+
+.songs-name h2{
+	text-align: center;
+	font-size: 45px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+}
+
+.white-space{
+	width: 100%;
+}
+
+.content{
+	background-color: black;
+   	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 10%;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 42% 42%;
+	column-gap: 15%;
+	row-gap: 200px;
+}
+
+.grid-item{
+	display: grid;
+	background: #565359;
+}
+
+.album-name{
+	width: 100%;
+	height: 90%;
+}
+
+.album-cover{
+	width: 49.85%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.grid-item img{
+	width: 220px;
+	height: 100%;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.album-info{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+h5{
+	font-size: 40px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+	margin-top: 30%;
+}
+
+h6{
+	font-size: 26px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+}	
+
+.song{
+	width: 100%;
+	height: 7%;
+	border-top: 2px solid black;
+}
+
+.song-number{
+	width: 10%;
+	height: 80%;
+	display: inline-block;
+	text-align: center;
+}
+
+.song-name{
+	width: 70%;
+	height: 80%;
+	display: inline-block;
+	margin-top: 2%;
+}
+
+.song-time{
+	width: 15%;
+	height: 80%;
+	display: inline-block;
+}
+
+h3{
+	font-size: 30px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+}
+
+h4{
+	font-size: 28px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: normal;
+}
+
+
+@media only screen and (max-width: 470px) {
+	nav img{
+    		width: 100px;
+		margin-top: 40px;
+	} 
+ 
+	.nav-links ul li{
+    		padding-top: 50px;
+		padding-bottom: 8px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+  	.nav-links ul li a{
+    		font-size: 12px;
+	}
+
+	.songs-header{
+		width: 100%;
+		height: 300px;
+		margin-top: 2%;
+	}
+
+	.songs-name{
+		align: center;
+		width: 40%;
+		margin-top: 100px;
+	}
+
+	.songs-name h2{
+		font-size: 25px;
+	}
+
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		gap: 50px;
+	}
+
+	.grid-item{
+		display: grid;
+		background: #565359;
+	}
+
+	.album-cover{
+		width: 49.85%;
+		height: 100%;
+		display: inline-block;
+		float: left;
+	}
+
+	.grid-item img{
+		width: 150px;
+		height: 100%;
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+
+	h5{
+		font-size: 20px;
+	}
+
+	h6{
+		font-size: 15px;
+	}	
+
+	h3{
+		font-size: 18px;
+	}
+
+	h4{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	nav img{
+    		width: 150px;
+		margin-top: 40px;
+	} 
+ 
+	.nav-links ul li{
+    		padding-top: 70px;
+		padding-bottom: 8px;
+		padding-left: 20px;
+		padding-right: 12px;
+	}
+
+  	.nav-links ul li a{
+    		font-size: 17px;
+	}
+
+	.songs-header{
+		width: 100%;
+		height: 400px;
+		margin-top: 2%;
+	}
+
+	.songs-name{
+		align: center;
+		width: 40%;
+		margin-top: 100px;
+	}
+
+	.songs-name h2{
+		font-size: 25px;
+	}
+
+	.grid-container{
+		display: grid;
+		grid-template-columns: auto;
+		gap: 50px;
+	}
+
+	.grid-item{
+		display: grid;
+		background: #565359;
+	}
+
+	.album-cover{
+		width: 49.85%;
+		height: 100%;
+		display: inline-block;
+		float: left;
+	}
+
+	.grid-item img{
+		width: 50px;
+		height: 100%;
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+
+	h5{
+		font-size: 20px;
+	}
+
+	h6{
+		font-size: 15px;
+	}	
+
+	h3{
+		font-size: 18px;
+	}
+
+	h4{
+		font-size: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
